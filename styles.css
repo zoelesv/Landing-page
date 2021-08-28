@@ -1,0 +1,331 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+*{font-family: 'Source Sans Pro', sans-serif;}
+@keyframes move {
+                from {
+                    left: -10%;
+                }
+                to {
+                    left: 0%;
+                }
+            }
+
+h5 {
+                position: relative;
+                animation-name: move;
+                animation-duration: 3s;
+                animation-fill-mode: forwards;
+            }
+
+.showme {
+          display: none;
+          color: white;
+          position: relative;
+          background-color:#2C2C2E;
+          border-radius: 5px;
+          text-align: center;
+        }
+
+.hover {
+            cursor: pointer;
+        }
+
+/* Display showme when user hover over the item */
+.hover:hover .showme {
+          display: block;
+          position: absolute;
+          margin-left: 30px;
+        }
+
+/* Create three equal columns that floats next to each other */
+.column3 {
+          float: left;
+          margin: 10px;
+          width: 100%;
+        }
+
+/* for desktop */
+@media (min-width: 600px) {
+            .column3 {
+                width: 34%;
+            }
+        }
+
+/* Create ten equal columns that floats next to each other */
+.column10 {
+          width: 8%;
+          margin: 1%;
+          display: block;
+        }
+
+/* Left and right column */
+.column.side {
+          float: left;
+          width: 25%;
+          margin: 10px;
+        }
+
+/* Mobile responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+          .column.side {
+            width: 100%;
+          }
+        }
+
+.idea.icon {
+          margin: 5px;
+          float: left;
+          width: 80px;
+          cursor: pointer;
+        }
+
+/* Responsive layout */
+@media (max-width: 600px) {
+          .column10 {
+            display: none;
+          }
+        }
+
+/* The Modal (background) */
+.modal {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+/* Modal Content/Box */
+.modal-content {
+          margin: 8% auto; /* 8% from the top and centered */
+          padding: 20px;
+          border: 1px solid #888;
+          width: 70%; /* Could be more or less, depending on screen size */
+        }
+
+/* The Close Button */
+.close {
+          color: #aaa;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+        }
+
+.close:hover,
+.close:focus {
+          color: black;
+          text-decoration: none;
+          cursor: pointer;
+        }
+
+.title {
+            font-size: 16px;
+            display:inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 29ch;
+            margin-bottom: -5px;
+        }
+
+#complete {
+             font-size: 30px;
+             color: green;
+        }
+
+#timebox {
+            text-align: center;
+             width: 8rem;
+             font-size:100px;
+             color: black;
+             font-weight: bold;
+             text-align: center;
+        }
+
+#colon {
+            width: 1rem;
+            font-size:100px;
+             color: black;
+             font-weight: bold;
+             text-align: center;
+        }
+
+#frame {
+            background-color: #E15241;
+            border-radius: 12px;
+            text-align: center;
+            border: 0.3px solid #C50018;
+        }
+
+#attention {
+            text-align: center;
+            margin: 15px;
+        }
+
+#water {
+             border-radius: 30px;
+             width: 60px;
+        }
+
+.dropbtn {
+          background-color: #1C2A34;
+          color: white;
+          border: none;
+          cursor: pointer;
+        }
+
+.dropbtn:hover, .dropbtn:focus {
+          background-color: #1C2A34;
+          color: #F2F2F7;
+        }
+
+.dropdown {
+          position: relative;
+          display: inline-block;
+          margin-right: 10px;
+        }
+
+.dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #1C1C1E;
+          min-width: 160px;
+          overflow: auto;
+          z-index: 1;
+        }
+
+.dropdown-content a {
+          color: white;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+
+.dropdown a:hover {background-color: black;}
+
+.show {display: block;}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #6FCF97;
+  margin-left: 35%;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

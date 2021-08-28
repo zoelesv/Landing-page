@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://lh3.googleusercontent.com/PS4KAhRIUC_1K_01p65dMi11yASu3ieQWHq-nhQgvcCDdTZ2yBoWUqfxuqc25KwoXVCjSfIMXoYGIiaBjyKXjVipvc5Hi7ZjR1LREVHv_bnCcH1GgV3DquiPg3bCqXJKYbUGwKdazQ=w428-h315-p-k" />
+    <title>Grow Your Power app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link   rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/cyborg/bootstrap.min.css" integrity="sha384-nEnU7Ae+3lD52AK+RGNzgieBWMnEfgTbRHIwEvp1XXPdqdO6uLTd/NwXbzboqjc2" crossorigin="anonymous">
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg justify-content-center sticky-top" style="background-color: #050505;">
+            <a class="navbar-brand"><img style="height: 35px;" src="https://lh3.googleusercontent.com/9U-RlA7PLZpeNQMHdj46BZIlR6K25XpIGOrEmjDQOyDws2e0u2xQZtVWZDe-EFSbzQVFv4Y4ZVGVTAYW9iSwhX41xuOK3feets3duZLO3KTWnwtck1o8b0xHbQHV1_-k6mQ0F9w2jw=w123-h62-p-k"/></a>
+            <div>
+              <ul class="navbar-nav mr-auto">
+              </ul>
+            </div>
+          </nav>
+    <div class="container">
+    <div style="border: 0.5px solid #6FCF97; border-radius: 25px;  margin-top: 20px; margin-left: 15%; margin-right: 15%;"></div>
+    <h6 style="padding-top: 10px; text-align:center; font-size:18px;">❝ You can not fail at being yourself ❞</h6>
+   <div style="border: 0.5px solid #6FCF97; border-radius: 25px; margin-bottom: 20px; margin-top: 5px; margin-left: 15%; margin-right: 15%;"></div>
+    <h2 style="text-align: center; margin:100px;">GREAT THINGS
+    <br/>ARE COMING</h2>
+    <div style="text-align: center;">
+    <div class="row" id="myBtn">
+        <div class="col text-center">
+            <button  type="button" class="btn btn-light">Learn more</button></div></div>
+        <div style="border: 0.5px solid #6FCF97; border-radius: 25px;  margin-top: 30px; margin-left: 15%; margin-right: 15%; margin-bottom: 10px;"></div>
+                <h6>We believe everyone has a special power!</h6>
+                <div style="border: 0.5px solid #6FCF97; border-radius: 25px;  margin-top: 10px; margin-left: 15%; margin-right: 15%;"></div>
+    <div id="myModal"  class="modal" style="margin-left: 5px; display: none; color: red;">
+        <div class="modal-content">
+            <span class="close" id="reload" style="text-align: right;">&times;</span>
+            <div style="border: 0.5px solid #6FCF97; border-radius: 25px;  margin-top: 20px; margin-left: 20%; margin-right: 20%;"></div>
+            <div class="col text-center">
+            <img style="width:250px; margin-top:10px;" src="https://lh3.googleusercontent.com/-fE54MN8gLZP1G3ueTAg6Ct5DIsPVXLlEfsTXgRLH7sZ7OUWEtpL7QVWDbKSCq9-QppCamVIMqKsRCTunQh4wVxYvxR2EfZbXQ0QS-z2-w7f3mOO3SLeFxUppWVch-ICTf2RmA-5Wg=w507-h211-p-k" />
+        <br/>
+        <br/>
+        <h6>Sign up to be the first to know:</h6>
+        <form id="feed_form" action="{% url 'index' %}" method="POST" >
+            {% csrf_token %}
+            <div class="input-group">
+                <input type="email" name="note" minlength="3" placeholder="Enter your email here*" maxlength="100" rows="1" style="border-color: #E5E5EA; background-color: black; color: white; font-family: Arial, Helvetica, sans-serif;" class="form-control"></input>
+
+                <div class="input-group-append" >
+                    <button class="btn btn-dark" type="submit" name="btnfeed">Notify Me!</button></div>
+            </div>
+        </form>
+                <div style="border: 0.5px solid #6FCF97; border-radius: 25px;  margin-top: 20px; margin-bottom: 30px;"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</div>
+</body>
+<footer style="text-align: center;">
+    <span> Copyright©2021 GrowUrpower by Zoom1141CodeInPlace2021</span><span>
+</footer>
